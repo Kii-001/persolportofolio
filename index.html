@@ -1,0 +1,764 @@
+                    <!DOCTYPE html>
+                    <html lang="id" class="no-js">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Fathur Rizky - Creative Web Developer</title>
+                        <meta name="description" content="Fathur Rizky - Passionate Web Developer & UI/UX Designer from Indonesia">
+                        <meta name="keywords" content="web developer, frontend, javascript, react, portfolio">
+                        <meta name="author" content="Fathur Rizky">
+                        
+                        <!-- Preload Critical Resources -->
+                        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" as="style">
+                        <link rel="preload" href="css/style.css" as="style">
+                        
+                        <!-- Fonts & Icons -->
+                        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+                        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+                        
+                        <!-- Styles -->
+                        <link rel="stylesheet" href="css/style.css">
+                        
+                        <!-- Favicon -->
+                        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+                    </head>
+                    <body>
+                        <!-- Loading Screen -->
+                        <div class="loading-screen" id="loadingScreen">
+                            <div class="loading-content">
+                                <div class="loading-logo">
+                                    <div class="logo-spinner">
+                                        <div class="spinner-circle"></div>
+                                        <div class="logo-text">F</div>
+                                    </div>
+                                </div>
+                                <div class="loading-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill"></div>
+                                    </div>
+                                    <span class="loading-text">Loading Portfolio...</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Header -->
+                        <header id="mainHeader">
+                            <div class="container">
+                                <nav class="navbar">
+                                    <a href="#home" class="logo">
+                                        <span class="logo-text"></span>
+                                        <span class="logo-dot">Fathur.</span>
+                                    </a>
+
+                                    <ul class="nav-links">
+                                        <li class="nav-item">
+                                            <a href="#home" class="nav-link">
+                                                <i class="fas fa-home nav-icon"></i>
+                                                <span class="nav-text">Home</span>
+                                                <span class="nav-indicator"></span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#about" class="nav-link">
+                                                <i class="fas fa-user nav-icon"></i>
+                                                <span class="nav-text">About</span>
+                                                <span class="nav-indicator"></span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#skills" class="nav-link">
+                                                <i class="fas fa-code nav-icon"></i>
+                                                <span class="nav-text">Skills</span>
+                                                <span class="nav-indicator"></span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#projects" class="nav-link">
+                                                <i class="fas fa-briefcase nav-icon"></i>
+                                                <span class="nav-text">Projects</span>
+                                                <span class="nav-indicator"></span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#contact" class="nav-link">
+                                                <i class="fas fa-envelope nav-icon"></i>
+                                                <span class="nav-text">Contact</span>
+                                                <span class="nav-indicator"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                    <div class="nav-controls">
+                                        <div class="theme-container">
+                                            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                                                <span class="theme-ball"></span>
+                                            </button>
+                                        </div>
+
+                                        <!-- Download CV -->
+                                        <a href="pdf/cv.pdf" class="btn-download" id="download-cv">
+                                            <i class="fas fa-download"></i>
+                                            <span>CV</span>
+                                        </a>
+
+                                        <!-- Mobile Menu -->
+                                        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+                                        <div class="hamburger-line"></div>
+                                        <div class="hamburger-line"></div>
+                                        <div class="hamburger-line"></div>
+                                    </button>
+                                    </div>
+                                </nav>
+                            </div>
+                        </header>
+
+                        <!-- Main Content -->
+                        <main>
+                            <!-- Hero Section -->
+                            <section id="home" class="hero-section">
+                                <div class="hero-background">
+                                    <div class="hero-shape shape-1"></div>
+                                    <div class="hero-shape shape-2"></div>
+                                    <div class="hero-shape shape-3"></div>
+                                </div>
+                                
+                                <div class="container">
+                                    <div class="hero-content">
+                                        <div class="hero-text" data-aos="fade-right" data-aos-delay="200">
+                                            <div class="hero-badge">
+                                                <span class="badge-text">Available for Freelance</span>
+                                                <div class="pulse-dot"></div>
+                                            </div>
+                                            
+                                            <h1 class="hero-title">
+                                                <span class="title-line">Hi, I'm <span class="text-gradient">Fathur Rizky</span></span>
+                                                <span class="title-line typed-text-container">
+                                                    <span class="typed-text" id="typed-text"></span>
+                                                    <span class="typed-cursor">|</span>
+                                                </span>
+                                            </h1>
+                                            
+                                            <p class="hero-description">
+                                                I craft <span class="highlight">digital experiences</span> that blend beautiful design with 
+                                                cutting-edge technology. Passionate about creating solutions that 
+                                                make a difference.
+                                            </p>
+                                            
+                                            <div class="hero-stats">
+                                                <div class="stat-item">
+                                                    <span class="stat-number" data-count="50">0</span>
+                                                    <span class="stat-label">Projects Done</span>
+                                                </div>
+                                                <div class="stat-item">
+                                                    <span class="stat-number" data-count="3">0</span>
+                                                    <span class="stat-label">Years Experience</span>
+                                                </div>
+                                                <div class="stat-item">
+                                                    <span class="stat-number" data-count="25">0</span>
+                                                    <span class="stat-label">Happy Clients</span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="hero-btns">
+                                                <a href="#projects" class="btn btn-primary">
+                                                    <span>View My Work</span>
+                                                    <i class="fas fa-arrow-right"></i>
+                                                </a>
+                                                <a href="#contact" class="btn btn-secondary">
+                                                    <i class="fas fa-paper-plane"></i>
+                                                    <span>Let's Talk</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="hero-visual" data-aos="fade-left" data-aos-delay="400">
+                                            <div class="profile-card card-3d">
+                                                <div class="card-inner">
+                                                    <div class="card-front">
+                                                        <img src="images/profil.png" 
+                                                            alt="Fathur Rizky" class="profile-img">
+                                                        <div class="card-glow"></div>
+                                                    </div>
+                                                    <div class="card-back">
+                                                        <div class="card-content">
+                                                            <h3>Let's Work Together!</h3>
+                                                            <p>Ready to bring your ideas to life</p>
+                                                            <a href="#contact" class="btn btn-small btn-primary">Get In Touch</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="floating-elements">
+                                                    <div class="float-element element-1">
+                                                        <i class="fab fa-js"></i>
+                                                    </div>
+                                                    <div class="float-element element-2">
+                                                        <i class="fab fa-react"></i>
+                                                    </div>
+                                                    <div class="float-element element-3">
+                                                        <i class="fab fa-node-js"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Scroll Indicator -->
+                                    <div class="scroll-indicator">
+                                        <div class="scroll-mouse">
+                                            <div class="scroll-wheel"></div>
+                                        </div>
+                                        <span class="scroll-text">Scroll to explore</span>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- About Section -->
+                            <!-- About Section Partial -->
+                    <section id="about" class="about-section">
+                        <div class="container">
+                            <div class="section-header" data-aos="fade-up">
+                                <span class="section-subtitle">Get To Know More</span>
+                                <h2 class="section-title">About Me</h2>
+                                <div class="section-divider"></div>
+                            </div>
+                            
+                            <div class="about-content">
+                                <div class="about-visual" data-aos="fade-right">
+                                    <div class="about-image">
+                                        <img src="images/about.png" 
+                                            alt="About Fathur Rizky" class="about-img">
+                                        <div class="image-frame"></div>
+                                        <div class="experience-badge">
+                                            <span class="exp-years">3+</span>
+                                            <span class="exp-text">Years Experience</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="about-text" data-aos="fade-left">
+                                    <div class="about-intro">
+                                        <h3>Creative Web Developer & UI/UX Designer</h3>
+                                        <p>
+                                            I specialize in creating <strong>responsive, user-friendly websites</strong> and 
+                                            applications that deliver exceptional user experiences. With a keen eye for 
+                                            design and a passion for clean code, I bring ideas to life.
+                                        </p>
+                                        <p>
+                                            My journey in web development started over 3 years ago, and since then 
+                                            I've worked with various technologies and frameworks to create 
+                                            digital solutions that make a real impact.
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="about-tabs">
+                                        <div class="tab-buttons">
+                                            <button class="tab-btn active" data-tab="skills">Skills</button>
+                                            <button class="tab-btn" data-tab="experience">Experience</button>
+                                            <button class="tab-btn" data-tab="education">Education</button>
+                                        </div>
+                                        
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="skills-tab">
+                                                <div class="skills-mini">
+                                                    <div class="skill-tag">JavaScript</div>
+                                                    <div class="skill-tag">React</div>
+                                                    <div class="skill-tag">Node.js</div>
+                                                    <div class="skill-tag">UI/UX Design</div>
+                                                    <div class="skill-tag">Responsive Design</div>
+                                                    <div class="skill-tag">Git & GitHub</div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="tab-pane" id="experience-tab">
+                                                <div class="timeline">
+                                                    <div class="timeline-item">
+                                                        <div class="timeline-date">2025 - Present</div>
+                                                        <div class="timeline-content">
+                                                            <h4>Senior Web Developer</h4>
+                                                            <p>Tech Solutions Inc.</p>
+                                                            <ul>
+                                                                <li>Lead frontend development for client projects</li>
+                                                                <li>Mentor junior developers</li>
+                                                                <li>Implement responsive design principles</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="timeline-item">
+                                                        <div class="timeline-date">2024 - 2025</div>
+                                                        <div class="timeline-content">
+                                                            <h4>Frontend Developer</h4>
+                                                            <p>Digital Creative Agency</p>
+                                                            <ul>
+                                                                <li>Developed responsive websites</li>
+                                                                <li>Collaborated with design teams</li>
+                                                                <li>Optimized website performance</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="tab-pane" id="education-tab">
+                                                <div class="timeline">
+                                                    <div class="timeline-item">
+                                                        <div class="timeline-date">2023 - </div>
+                                                        <div class="timeline-content">
+                                                            <h4>Informatics Engineering</h4>
+                                                            <p>Institut Teknologi And Bisis Of Indonesia</p>
+                                                            <p>GPA: 3.94/4.0</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="about-actions">
+                                        <a href="#contact" class="btn btn-primary">
+                                            <i class="fas fa-paper-plane"></i>
+                                            <span>Let's Work Together</span>
+                                        </a>
+                                        <a href="pdf/cv.pdf" class="btn btn-secondary" id="download-cv-about">
+                                            <i class="fas fa-download"></i>
+                                            <span>Download CV</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                            <!-- Skills Section -->
+                            <section id="skills" class="skills-section">
+                                <div class="container">
+                                    <div class="section-header" data-aos="fade-up">
+                                        <span class="section-subtitle">What I'm Good At</span>
+                                        <h2 class="section-title">My Skills</h2>
+                                        <div class="section-divider"></div>
+                                    </div>
+                                    
+                                    <div class="skills-grid">
+                                        <!-- Technical Skills -->
+                                        <div class="skills-category card-3d" data-aos="fade-up">
+                                            <h3 class="category-title">
+                                                <i class="fas fa-code"></i>
+                                                Technical Skills
+                                            </h3>
+                                            <div class="skills-list">
+                                                <div class="skill-item">
+                                                    <div class="skill-info">
+                                                        <span class="skill-name">HTML5 & CSS3</span>
+                                                        <span class="skill-percent">95%</span>
+                                                    </div>
+                                                    <div class="skill-bar">
+                                                        <div class="skill-progress" data-width="95"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-item">
+                                                    <div class="skill-info">
+                                                        <span class="skill-name">JavaScript</span>
+                                                        <span class="skill-percent">90%</span>
+                                                    </div>
+                                                    <div class="skill-bar">
+                                                        <div class="skill-progress" data-width="90"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-item">
+                                                    <div class="skill-info">
+                                                        <span class="skill-name">React.js</span>
+                                                        <span class="skill-percent">85%</span>
+                                                    </div>
+                                                    <div class="skill-bar">
+                                                        <div class="skill-progress" data-width="85"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-item">
+                                                    <div class="skill-info">
+                                                        <span class="skill-name">Node.js</span>
+                                                        <span class="skill-percent">80%</span>
+                                                    </div>
+                                                    <div class="skill-bar">
+                                                        <div class="skill-progress" data-width="80"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Professional Skills -->
+                                        <div class="skills-category card-3d" data-aos="fade-up" data-aos-delay="100">
+                                            <h3 class="category-title">
+                                                <i class="fas fa-brain"></i>
+                                                Professional Skills
+                                            </h3>
+                                            <div class="skills-radial">
+                                                <div class="radial-item">
+                                                    <div class="radial-progress" data-progress="90">
+                                                        <span class="radial-value">90%</span>
+                                                    </div>
+                                                    <span class="radial-label">Problem Solving</span>
+                                                </div>
+                                                <div class="radial-item">
+                                                    <div class="radial-progress" data-progress="85">
+                                                        <span class="radial-value">85%</span>
+                                                    </div>
+                                                    <span class="radial-label">Teamwork</span>
+                                                </div>
+                                                <div class="radial-item">
+                                                    <div class="radial-progress" data-progress="88">
+                                                        <span class="radial-value">88%</span>
+                                                    </div>
+                                                    <span class="radial-label">Communication</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- Projects Section -->
+                            <section id="projects" class="projects-section">
+                                <div class="container">
+                                    <div class="section-header" data-aos="fade-up">
+                                        <span class="section-subtitle">My Creative Work</span>
+                                        <h2 class="section-title">Featured Projects</h2>
+                                        <div class="section-divider"></div>
+                                    </div>
+                                    
+                                    <div class="projects-grid">
+                                        <div class="project-card card-3d" data-aos="fade-up" data-aos-delay="100">
+                                            <div class="project-image">
+                                                <img src="images/apotek.png" 
+                                                    alt="Apotek Website" class="project-img">
+                                                <div class="project-overlay">
+                                                    <div class="project-links">
+                                                        <a href="https://github.com/Kii-001/apoteker" class="project-link">
+                                                            <i class="fas fa-external-link-alt"></i>
+                                                        </a>
+                                                        <a href="https://github.com/Kii-001/apoteker" class="project-link">
+                                                            <i class="fab fa-github"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="project-content">
+                                                <h3 class="project-title">Apotek Website</h3>
+                                                <p class="project-description">
+                                                    A fully responsive apotek platform with modern design, 
+                                                    secure payment integration, and excellent user experience.
+                                                </p>
+                                                <div class="project-tech">
+                                                    <span class="tech-tag">PHP</span>
+                                                    <span class="tech-tag">Node.js</span>
+                                                    <span class="tech-tag">MySql</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="project-card card-3d" data-aos="fade-up" data-aos-delay="200">
+                                            <div class="project-image">
+                                                <img src="images/toko_buku.png" 
+                                                    alt="Book Store App" class="project-img">
+                                                <div class="project-overlay">
+                                                    <div class="project-links">
+                                                        <a href="https://github.com/Kii-001/penjualan_buku" class="project-link">
+                                                            <i class="fas fa-external-link-alt"></i>
+                                                        </a>
+                                                        <a href="https://github.com/Kii-001/penjualan_buku" class="project-link">
+                                                            <i class="fab fa-github"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="project-content">
+                                                <h3 class="project-title">Toko Buku</h3>
+                                                <p class="project-description">
+                                                    A fully responsive book store application with modern design, 
+                                                    secure payment integration, and excellent user experience.
+                                                </p>
+                                                <div class="project-tech">
+                                                    <span class="tech-tag">Vue.js</span>
+                                                    <span class="tech-tag">Firebase</span>
+                                                    <span class="tech-tag">SCSS</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="project-card card-3d" data-aos="fade-up" data-aos-delay="300">
+                                            <div class="project-image">
+                                                <img src="images/toko_roti.png" 
+                                                    alt="Toko Roti" class="project-img">
+                                                <div class="project-overlay">
+                                                    <div class="project-links">
+                                                        <a href="https://github.com/Kii-001/bakery" class="project-link">
+                                                            <i class="fas fa-external-link-alt"></i>
+                                                        </a>
+                                                        <a href="https://github.com/Kii-001/bakery" class="project-link">
+                                                            <i class="fab fa-github"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="project-content">
+                                                <h3 class="project-title">Bekry web</h3>
+                                                <p class="project-description">
+                                                    A fully responsive bakery website with modern design, 
+                                                    secure payment integration, and excellent user experience.
+                                                </p>
+                                                <div class="project-tech">
+                                                    <span class="tech-tag">JavaScript</span>
+                                                    <span class="tech-tag">API</span>
+                                                    <span class="tech-tag">Chart.js</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- Contact Section -->
+                            <section id="contact" class="contact-section">
+                                <div class="container">
+                                    <div class="section-header" data-aos="fade-up">
+                                        <span class="section-subtitle">Get In Touch</span>
+                                        <h2 class="section-title">Contact Me</h2>
+                                        <div class="section-divider"></div>
+                                    </div>
+                                    
+                                    <div class="contact-content">
+                                        <div class="contact-info" data-aos="fade-right">
+                                            <div class="contact-item">
+                                                <div class="contact-icon">
+                                                    <i class="fas fa-map-marker-alt"></i>
+                                                </div>
+                                                <div class="contact-text">
+                                                    <h3>Location</h3>
+                                                    <p>Medan, Indonesia</p>
+                                                </div>
+                                            </div>
+                                            <div class="contact-item">
+                                                <div class="contact-icon">
+                                                    <i class="fas fa-envelope"></i>
+                                                </div>
+                                                <div class="contact-text">
+                                                    <h3>Email</h3>
+                                                    <p>fathurriski456@gmail.com</p>
+                                                </div>
+                                            </div>
+                                            <div class="contact-item">
+                                                <div class="contact-icon">
+                                                    <i class="fas fa-phone"></i>
+                                                </div>
+                                                <div class="contact-text">
+                                                    <h3>Phone</h3>
+                                                    <p>+62 812 3456 7890</p>
+                                                </div>
+                                            </div>
+                                            <div class="contact-social">
+                                                <a href="https://github.com/Kii-001" class="social-link" aria-label="GitHub">
+                                                    <i class="fab fa-github"></i>
+                                                </a>
+                                                <a href="https://id.linkedin.com/in/fathur-riski-84a263389" class="social-link" aria-label="LinkedIn">
+                                                    <i class="fab fa-linkedin-in"></i>
+                                                </a>
+                                                <a href="https://www.instagram.com/fthurrzkyy_" class="social-link" aria-label="Instagram">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a>
+                                                <a href="https://x.com/kyy00025" class="social-link" aria-label="Twitter">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        
+                                    <div class="contact-form" data-aos="fade-left">
+                        <div class="form-decoration form-decoration-1"></div>
+                        <div class="form-decoration form-decoration-2"></div>
+                        
+                        <div class="form-header">
+                            <h3 class="form-title">Send Me a Message</h3>
+                            <p class="form-subtitle">I'll get back to you as soon as possible</p>
+                        </div>
+
+                        <form id="contactForm" novalidate>
+                            <div id="formStatus" class="form-status" style="display: none;"></div>
+                            
+                            <div class="form-group floating-label">
+                                <input type="text" id="name" name="name" class="form-control" placeholder=" " required>
+                                <label for="name" class="form-label">Your Name</label>
+                                <div class="field-error" id="nameError"></div>
+                            </div>
+
+                            <div class="form-group floating-label">
+                                <input type="email" id="email" name="email" class="form-control" placeholder=" " required>
+                                <label for="email" class="form-label">Email Address</label>
+                                <div class="field-error" id="emailError"></div>
+                            </div>
+
+                            <div class="form-group floating-label">
+                                <textarea id="message" name="message" class="form-control" placeholder=" " rows="5" required maxlength="500"></textarea>
+                                <label for="message" class="form-label">Your Message</label>
+                                <div class="char-counter" id="charCounter">0/500</div>
+                                <div class="field-error" id="messageError"></div>
+                            </div>
+
+                            <div class="form-submit">
+                                <button type="submit" class="btn-submit" id="submitBtn">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- CTA Section -->
+                            <section class="cta-section">
+                                <div class="container">
+                                    <div class="cta-content" data-aos="zoom-in">
+                                        <h2 class="cta-title">Ready to Start Your Project?</h2>
+                                        <p class="cta-description">
+                                            Let's work together to bring your ideas to life. I'm just a click away.
+                                        </p>
+                                        <div class="cta-btns">
+                                            <a href="#contact" class="btn btn-primary btn-large">
+                                                <i class="fas fa-rocket"></i>
+                                                <span>Get Started</span>
+                                            </a>
+                                            <a href="#projects" class="btn btn-secondary btn-large">
+                                                <i class="fas fa-eye"></i>
+                                                <span>View Portfolio</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </main>
+
+                        <!-- Footer -->
+                        <footer>
+                            <div class="container">
+                                <div class="footer-main">
+                                    <div class="footer-brand">
+                                        <a href="#home" class="footer-logo">
+                                            <span class="logo-text"></span>
+                                            <span class="logo-dot">Fathur.</span>
+                                        </a>
+                                        <p class="footer-desc">
+                                            Passionate web developer creating digital experiences that matter. 
+                                            Let's build something amazing together.
+                                        </p>
+                                        <div class="footer-social">
+                                            <a href="https://github.com/Kii-001" class="social-link" aria-label="GitHub">
+                                                <i class="fab fa-github"></i>
+                                                <span class="social-tooltip">GitHub</span>
+                                            </a>
+                                            <a href="https://id.linkedin.com/in/fathur-riski-84a263389" class="social-link" aria-label="LinkedIn">
+                                                <i class="fab fa-linkedin-in"></i>
+                                                <span class="social-tooltip">LinkedIn</span>
+                                            </a>
+                                            <a href="https://www.instagram.com/fthurrzkyy_" class="social-link" aria-label="Instagram">
+                                                <i class="fab fa-instagram"></i>
+                                                <span class="social-tooltip">Instagram</span>
+                                            </a>
+                                            <a href="https://x.com/kyy00025" class="social-link" aria-label="Twitter">
+                                                <i class="fab fa-twitter"></i>
+                                                <span class="social-tooltip">Twitter</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="footer-links-group">
+                                        <h3 class="footer-title">Quick Links</h3>
+                                        <ul class="footer-links">
+                                            <li><a href="#home" class="footer-link">Home</a></li>
+                                            <li><a href="#about" class="footer-link">About</a></li>
+                                            <li><a href="#skills" class="footer-link">Skills</a></li>
+                                            <li><a href="#projects" class="footer-link">Projects</a></li>
+                                            <li><a href="#contact" class="footer-link">Contact</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="footer-links-group">
+                                        <h3 class="footer-title">Services</h3>
+                                        <ul class="footer-links">
+                                            <li><a href="#" class="footer-link">Web Development</a></li>
+                                            <li><a href="#" class="footer-link">UI/UX Design</a></li>
+                                            <li><a href="#" class="footer-link">Mobile Apps</a></li>
+                                            <li><a href="#" class="footer-link">E-commerce</a></li>
+                                            <li><a href="#" class="footer-link">SEO Optimization</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="footer-contact">
+                                        <h3 class="footer-title">Get In Touch</h3>
+                                        <div class="contact-info">
+                                            <div class="contact-item">
+                                                <i class="fas fa-map-marker-alt contact-icon"></i>
+                                                <div class="contact-text">
+                                                    <span>Location</span>
+                                                    <p>Medan, Indonesia</p>
+                                                </div>
+                                            </div>
+                                            <div class="contact-item">
+                                                <i class="fas fa-envelope contact-icon"></i>
+                                                <div class="contact-text">
+                                                    <span>Email</span>
+                                                    <p>fathurriski456@gmail.com</p>
+                                                </div>
+                                            </div>
+                                            <div class="contact-item">
+                                                <i class="fas fa-phone contact-icon"></i>
+                                                <div class="contact-text">
+                                                    <span>Phone</span>
+                                                    <p>+62 857 6346 0674</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#contact" class="btn-contact">
+                                            <i class="fas fa-paper-plane"></i>
+                                            Send Message
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="footer-bottom">
+                                    <div class="footer-divider"></div>
+                                    
+                                    <div class="footer-bottom-content">
+                                        <div class="copyright">
+                                            <p>&copy; <span id="current-year">2025</span> <span class="highlight">Fathur Rizky</span>. All Rights Reserved.</p>
+                                        </div>
+                                        
+                                        <div class="footer-legal">
+                                            <a href="#" class="legal-link">Privacy Policy</a>
+                                            <a href="#" class="legal-link">Terms of Service</a>
+                                            <a href="#" class="legal-link">Cookie Policy</a>
+                                        </div>
+
+                                        <div class="back-to-top" id="back-to-top">
+                                            <i class="fas fa-arrow-up"></i>
+                                            <span class="tooltip">Back to Top</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="footer-floating">
+                                <div class="floating-element element-1"></div>
+                                <div class="floating-element element-2"></div>
+                                <div class="floating-element element-3"></div>
+                            </div>
+                        </footer>
+
+                        <!-- Scripts -->
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script src="js/script.js"></script>
+                        <script src="js/animations.js"></script>
+                        <script src="js/components.js"></script>
+                        <script src="js/email.js"></script>
+                        <script src="js/config.js"></script>
+                        <script src="js/utils.js"></script>
+                    </body>
+                    </html>
